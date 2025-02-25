@@ -1,0 +1,5 @@
+<div class="dex-container" id="dex">
+  <% @pokemons.each do |pkm| %>
+    <%= render partial: "pokemons/pokemon", locals: { pkm: pkm } %>
+  <% end %>
+</div>

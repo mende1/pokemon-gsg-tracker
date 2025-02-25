@@ -1,0 +1,6 @@
+<div id="pokemon_<%= pkm.id %>" class="pokemon <%= pkm.captured? ? 'captured' : '' %>"
+     data-controller="pokemon"
+     data-pokemon-id="<%= pkm.id %>"
+     data-action="click->pokemon#toggleCaptured">
+  <%= image_tag pkm.asset %>
+</div>
